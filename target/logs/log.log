@@ -1,0 +1,169 @@
+16-02-2020 00:00:00.947 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16-02-2020 00:00:01.075 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+16-02-2020 00:00:01.118 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+16-02-2020 00:00:01.185 [http-nio-8080-exec-1] INFO  c.a.d.b.c.BusinessController.getMyName - doStuff took input - 
+16-02-2020 00:00:01.190 [http-nio-8080-exec-1] WARN  c.a.d.b.c.BusinessController.getMyName - doStuff needed to warn - 
+16-02-2020 00:00:01.193 [http-nio-8080-exec-1] ERROR c.a.d.b.c.BusinessController.getMyName - doStuff encountered an error with value - 
+16-02-2020 00:02:11.962 [http-nio-8080-exec-5] INFO  c.a.d.b.c.BusinessController.getMyName - doStuff took input - 
+16-02-2020 00:02:11.968 [http-nio-8080-exec-5] WARN  c.a.d.b.c.BusinessController.getMyName - doStuff needed to warn - 
+16-02-2020 00:02:11.971 [http-nio-8080-exec-5] ERROR c.a.d.b.c.BusinessController.getMyName - doStuff encountered an error with value - 
+16-02-2020 00:03:52.520 [Thread-3] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2471cca7: startup date [Sat Feb 15 23:59:12 AEDT 2020]; root of context hierarchy
+16-02-2020 00:03:52.547 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+16-02-2020 00:04:19.313 [main] INFO  c.a.d.business.BusinessApplication.logStarting - Starting BusinessApplication v0.0.1-SNAPSHOT on DESKTOP-IEUIIL0 with PID 4320 (D:\Code\businessdemo\target\businessdemo.jar started by louser in D:\Code\businessdemo\target)
+16-02-2020 00:04:19.327 [main] INFO  c.a.d.business.BusinessApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+16-02-2020 00:04:19.424 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46f5f779: startup date [Sun Feb 16 00:04:19 AEDT 2020]; root of context hierarchy
+16-02-2020 00:04:21.718 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+16-02-2020 00:04:21.759 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+16-02-2020 00:04:21.762 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.32
+16-02-2020 00:04:21.789 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft Windows Performance Toolkit\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;.]
+16-02-2020 00:04:21.940 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+16-02-2020 00:04:21.944 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2521 ms
+16-02-2020 00:04:22.050 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.addRegistration - Servlet dispatcherServlet mapped to [/]
+16-02-2020 00:04:22.059 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+16-02-2020 00:04:22.067 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16-02-2020 00:04:22.071 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16-02-2020 00:04:22.074 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+16-02-2020 00:04:22.252 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:04:22.540 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46f5f779: startup date [Sun Feb 16 00:04:19 AEDT 2020]; root of context hierarchy
+16-02-2020 00:04:22.665 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/info],methods=[GET]}" onto public java.lang.String com.anz.docker.business.controller.BusinessController.getMyName()
+16-02-2020 00:04:22.677 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16-02-2020 00:04:22.693 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16-02-2020 00:04:22.791 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:04:22.798 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:04:23.016 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+16-02-2020 00:04:23.083 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+16-02-2020 00:04:23.097 [main] INFO  c.a.d.business.BusinessApplication.logStarted - Started BusinessApplication in 4.524 seconds (JVM running for 5.22)
+16-02-2020 00:04:36.287 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16-02-2020 00:04:36.292 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+16-02-2020 00:04:36.335 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+16-02-2020 00:04:36.524 [http-nio-8080-exec-1] DEBUG c.a.d.b.c.BusinessController.getMyName - doStuff needed to debug - 
+16-02-2020 00:04:36.529 [http-nio-8080-exec-1] INFO  c.a.d.b.c.BusinessController.getMyName - doStuff took input - 
+16-02-2020 00:04:36.532 [http-nio-8080-exec-1] WARN  c.a.d.b.c.BusinessController.getMyName - doStuff needed to warn - 
+16-02-2020 00:04:36.540 [http-nio-8080-exec-1] ERROR c.a.d.b.c.BusinessController.getMyName - doStuff encountered an error with value - 
+16-02-2020 00:07:11.822 [Thread-3] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46f5f779: startup date [Sun Feb 16 00:04:19 AEDT 2020]; root of context hierarchy
+16-02-2020 00:07:11.851 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+16-02-2020 00:07:34.860 [main] INFO  c.a.d.business.BusinessApplication.logStarting - Starting BusinessApplication v0.0.1-SNAPSHOT on DESKTOP-IEUIIL0 with PID 3168 (D:\Code\businessdemo\target\businessdemo.jar started by louser in D:\Code\businessdemo\target)
+16-02-2020 00:07:34.873 [main] INFO  c.a.d.business.BusinessApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+16-02-2020 00:07:34.967 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f4a7090: startup date [Sun Feb 16 00:07:34 AEDT 2020]; root of context hierarchy
+16-02-2020 00:07:37.120 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+16-02-2020 00:07:37.171 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+16-02-2020 00:07:37.174 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.32
+16-02-2020 00:07:37.192 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft Windows Performance Toolkit\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;.]
+16-02-2020 00:07:37.347 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+16-02-2020 00:07:37.351 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2384 ms
+16-02-2020 00:07:37.457 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.addRegistration - Servlet dispatcherServlet mapped to [/]
+16-02-2020 00:07:37.468 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+16-02-2020 00:07:37.473 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16-02-2020 00:07:37.479 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16-02-2020 00:07:37.483 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+16-02-2020 00:07:37.688 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:07:38.020 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f4a7090: startup date [Sun Feb 16 00:07:34 AEDT 2020]; root of context hierarchy
+16-02-2020 00:07:38.152 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/info],methods=[GET]}" onto public java.lang.String com.anz.docker.business.controller.BusinessController.getMyName()
+16-02-2020 00:07:38.173 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16-02-2020 00:07:38.187 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16-02-2020 00:07:38.236 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:07:38.243 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:07:38.462 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+16-02-2020 00:07:38.523 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+16-02-2020 00:07:38.536 [main] INFO  c.a.d.business.BusinessApplication.logStarted - Started BusinessApplication in 4.387 seconds (JVM running for 5.064)
+16-02-2020 00:08:20.404 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16-02-2020 00:08:20.407 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+16-02-2020 00:08:20.456 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+16-02-2020 00:08:20.642 [http-nio-8080-exec-1] DEBUG c.a.d.b.c.BusinessController.getMyName - doStuff needed to debug - 
+16-02-2020 00:08:20.646 [http-nio-8080-exec-1] INFO  c.a.d.b.c.BusinessController.getMyName - doStuff took input - 
+16-02-2020 00:08:20.654 [http-nio-8080-exec-1] WARN  c.a.d.b.c.BusinessController.getMyName - doStuff needed to warn - 
+16-02-2020 00:08:20.658 [http-nio-8080-exec-1] ERROR c.a.d.b.c.BusinessController.getMyName - doStuff encountered an error with value - 
+16-02-2020 00:11:04.643 [Thread-3] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f4a7090: startup date [Sun Feb 16 00:07:34 AEDT 2020]; root of context hierarchy
+16-02-2020 00:11:04.669 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+16-02-2020 00:11:07.904 [main] INFO  c.a.d.business.BusinessApplication.logStarting - Starting BusinessApplication v0.0.1-SNAPSHOT on DESKTOP-IEUIIL0 with PID 9644 (D:\Code\businessdemo\target\businessdemo.jar started by louser in D:\Code\businessdemo\target)
+16-02-2020 00:11:07.918 [main] INFO  c.a.d.business.BusinessApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+16-02-2020 00:11:08.019 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aceb1a5: startup date [Sun Feb 16 00:11:08 AEDT 2020]; root of context hierarchy
+16-02-2020 00:11:10.299 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+16-02-2020 00:11:10.357 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+16-02-2020 00:11:10.363 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.32
+16-02-2020 00:11:10.384 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft Windows Performance Toolkit\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;.]
+16-02-2020 00:11:10.540 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+16-02-2020 00:11:10.543 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2525 ms
+16-02-2020 00:11:10.731 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.addRegistration - Servlet dispatcherServlet mapped to [/]
+16-02-2020 00:11:10.742 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+16-02-2020 00:11:10.747 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16-02-2020 00:11:10.751 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16-02-2020 00:11:10.756 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+16-02-2020 00:11:10.967 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:11:11.293 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aceb1a5: startup date [Sun Feb 16 00:11:08 AEDT 2020]; root of context hierarchy
+16-02-2020 00:11:11.419 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/info],methods=[GET]}" onto public java.lang.String com.anz.docker.business.controller.BusinessController.getMyName()
+16-02-2020 00:11:11.434 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16-02-2020 00:11:11.446 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16-02-2020 00:11:11.494 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:11:11.501 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:11:11.715 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+16-02-2020 00:11:11.781 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+16-02-2020 00:11:11.791 [main] INFO  c.a.d.business.BusinessApplication.logStarted - Started BusinessApplication in 4.637 seconds (JVM running for 5.312)
+16-02-2020 00:11:37.845 [Thread-3] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aceb1a5: startup date [Sun Feb 16 00:11:08 AEDT 2020]; root of context hierarchy
+16-02-2020 00:11:37.868 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+16-02-2020 00:11:42.008 [main] INFO  c.a.d.business.BusinessApplication.logStarting - Starting BusinessApplication v0.0.1-SNAPSHOT on DESKTOP-IEUIIL0 with PID 10032 (D:\Code\businessdemo\target\businessdemo.jar started by louser in D:\Code\businessdemo\target)
+16-02-2020 00:11:42.024 [main] INFO  c.a.d.business.BusinessApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+16-02-2020 00:11:42.132 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a42bbf4: startup date [Sun Feb 16 00:11:42 AEDT 2020]; root of context hierarchy
+16-02-2020 00:11:44.346 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+16-02-2020 00:11:44.400 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+16-02-2020 00:11:44.403 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.32
+16-02-2020 00:11:44.426 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft Windows Performance Toolkit\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;.]
+16-02-2020 00:11:44.578 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+16-02-2020 00:11:44.582 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2450 ms
+16-02-2020 00:11:44.674 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.addRegistration - Servlet dispatcherServlet mapped to [/]
+16-02-2020 00:11:44.681 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+16-02-2020 00:11:44.684 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16-02-2020 00:11:44.688 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16-02-2020 00:11:44.697 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+16-02-2020 00:11:44.872 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:11:45.223 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a42bbf4: startup date [Sun Feb 16 00:11:42 AEDT 2020]; root of context hierarchy
+16-02-2020 00:11:45.352 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/info],methods=[GET]}" onto public java.lang.String com.anz.docker.business.controller.BusinessController.getMyName()
+16-02-2020 00:11:45.365 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16-02-2020 00:11:45.377 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16-02-2020 00:11:45.424 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:11:45.430 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:11:45.673 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+16-02-2020 00:11:45.748 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+16-02-2020 00:11:45.771 [main] INFO  c.a.d.business.BusinessApplication.logStarted - Started BusinessApplication in 4.554 seconds (JVM running for 5.251)
+16-02-2020 00:11:54.493 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16-02-2020 00:11:54.496 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+16-02-2020 00:11:54.544 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+16-02-2020 00:11:54.724 [http-nio-8080-exec-1] DEBUG c.a.d.b.c.BusinessController.getMyName - doStuff needed to debug - 
+16-02-2020 00:11:54.726 [http-nio-8080-exec-1] INFO  c.a.d.b.c.BusinessController.getMyName - doStuff took input - 
+16-02-2020 00:11:54.729 [http-nio-8080-exec-1] WARN  c.a.d.b.c.BusinessController.getMyName - doStuff needed to warn - 
+16-02-2020 00:11:54.739 [http-nio-8080-exec-1] ERROR c.a.d.b.c.BusinessController.getMyName - doStuff encountered an error with value - 
+16-02-2020 00:13:20.556 [Thread-3] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a42bbf4: startup date [Sun Feb 16 00:11:42 AEDT 2020]; root of context hierarchy
+16-02-2020 00:13:20.581 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+16-02-2020 00:13:57.170 [main] INFO  c.a.d.business.BusinessApplication.logStarting - Starting BusinessApplication v0.0.1-SNAPSHOT on DESKTOP-IEUIIL0 with PID 9884 (D:\Code\businessdemo\target\businessdemo.jar started by louser in D:\Code\businessdemo\target)
+16-02-2020 00:13:57.194 [main] INFO  c.a.d.business.BusinessApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+16-02-2020 00:13:57.291 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b1d2887: startup date [Sun Feb 16 00:13:57 AEDT 2020]; root of context hierarchy
+16-02-2020 00:13:59.573 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+16-02-2020 00:13:59.631 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+16-02-2020 00:13:59.634 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.32
+16-02-2020 00:13:59.655 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft Windows Performance Toolkit\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;.]
+16-02-2020 00:13:59.805 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+16-02-2020 00:13:59.810 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2519 ms
+16-02-2020 00:13:59.955 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.addRegistration - Servlet dispatcherServlet mapped to [/]
+16-02-2020 00:13:59.965 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+16-02-2020 00:13:59.970 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16-02-2020 00:13:59.983 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16-02-2020 00:13:59.988 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+16-02-2020 00:14:00.215 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:14:00.489 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b1d2887: startup date [Sun Feb 16 00:13:57 AEDT 2020]; root of context hierarchy
+16-02-2020 00:14:00.626 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/info],methods=[GET]}" onto public java.lang.String com.anz.docker.business.controller.BusinessController.getMyName()
+16-02-2020 00:14:00.657 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16-02-2020 00:14:00.683 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16-02-2020 00:14:00.746 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:14:00.755 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16-02-2020 00:14:01.019 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+16-02-2020 00:14:01.127 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+16-02-2020 00:14:01.147 [main] INFO  c.a.d.business.BusinessApplication.logStarted - Started BusinessApplication in 4.688 seconds (JVM running for 5.398)
+16-02-2020 00:14:13.682 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16-02-2020 00:14:13.688 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+16-02-2020 00:14:13.726 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+16-02-2020 00:14:13.769 [http-nio-8080-exec-1] DEBUG c.a.d.b.c.BusinessController.getMyName - doStuff needed to debug - 
+16-02-2020 00:14:13.773 [http-nio-8080-exec-1] INFO  c.a.d.b.c.BusinessController.getMyName - doStuff took input - 
+16-02-2020 00:14:13.775 [http-nio-8080-exec-1] WARN  c.a.d.b.c.BusinessController.getMyName - doStuff needed to warn - 
+16-02-2020 00:14:13.785 [http-nio-8080-exec-1] ERROR c.a.d.b.c.BusinessController.getMyName - doStuff encountered an error with value - 
+16-02-2020 00:15:08.138 [Thread-3] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b1d2887: startup date [Sun Feb 16 00:13:57 AEDT 2020]; root of context hierarchy
+16-02-2020 00:15:08.151 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
