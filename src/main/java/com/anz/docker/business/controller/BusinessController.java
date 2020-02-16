@@ -1,7 +1,5 @@
 package com.anz.docker.business.controller;
 
-
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -16,33 +14,36 @@ import com.anz.docker.bean.InfoBean;
 
 @RestController
 public class BusinessController {
-//	 #private static Logger logger = Logger.getLogger(BusinessController.class.getName());
-	  private static final Logger logger = LoggerFactory.getLogger(BusinessController.class);
+	// #private static Logger logger =
+	// Logger.getLogger(BusinessController.class.getName());
+	private static final Logger logger = LoggerFactory.getLogger(BusinessController.class);
+
 	@GetMapping("/info")
 	public InfoBean getinfo() {
-		String envInfoapp= System.getenv("app");
-		String envInfover= System.getenv("ver");
-		String envInfosha= System.getenv("sha");
+		String envInfoapp = System.getenv("app");
+		String envInfover = System.getenv("ver");
+		String envInfosha = System.getenv("sha");
 		InfoBean info = new InfoBean();
 		info.setService_name(envInfoapp);
 		info.setVersion(envInfover);
 		info.setGit_commit_sha(envInfosha);
-		  try (InputStream input = new FileInputStream("src/main/resources/application.properties")) {
-	            Properties prop = new Properties();
-	            Environment env = new Environment();
-	      
-	            prop.load(input);
-	            env.setLog_level(prop.getProperty("logging.level.root"));
-	            env.setService_port(prop.getProperty("server.port"));
-	           
-	        } catch (IOException ex) {
-	        	 logger.error("Exception while fetching env details",ex.getMessage());
-	        }
-		
-		 logger.info("Value received from run env for APP",envInfoapp);
-		 logger.info("Value received from run env for VER",envInfover);
-		 logger.info("Value received from run env for GIT SHA",envInfosha);
-	
+		try (InputStream input = new Properties().getClass().getResourceAsStream("/application.properties");) {
+			Properties prop = new Properties();
+			Environment environment = new Environment();
+			prop.load(input);
+			environment.setLog_level(prop.getProperty("logging.level.root"));
+			environment.setService_port(prop.getProperty("server.port"));
+			info.setEnv(environment);
+		} catch (IOException ex) {
+			ex.printStackTrace();
+			ex.getMessage();
+			logger.error("Exception while fetching env details", ex.getMessage());
+		}
+
+		logger.info("Value received from run env for APP", envInfoapp);
+		logger.info("Value received from run env for VER", envInfover);
+		logger.info("Value received from run env for GIT SHA", envInfosha);
+
 		return info;
 	}
 }
