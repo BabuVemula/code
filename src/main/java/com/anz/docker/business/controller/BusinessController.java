@@ -17,8 +17,10 @@ public class BusinessController {
 		String envInfoapp= System.getenv("app");
 		String envInfover= System.getenv("ver");
 		String envInfosha= System.getenv("sha");
-		
-		
+		InfoBean info = new InfoBean();
+		info.setService_name(envInfoapp);
+		info.setVersion(envInfover);
+		info.setGit_commit_sha(envInfosha);
 		
 		 logger.info("doStuff took input - {}",envInfoapp);
 		 logger.info("doStuff took input - {}",envInfover);
@@ -28,6 +30,6 @@ public class BusinessController {
 	    logger.info("doStuff took input - {}","");
 	    logger.warn("doStuff needed to warn - {}","");
 	    logger.error("doStuff encountered an error with value - {}","");
-		return new InfoBean();
+		return info;
 	}
 }
