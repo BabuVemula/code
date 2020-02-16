@@ -1,9 +1,9 @@
-#Requirements
-Maven
-java 8
-Docker
+# Requirements
+- Maven
+- java 8
+- Docker
 
-#Maven
+# Maven
 To install maven use
  "sudo yum install maven"
 
