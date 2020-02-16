@@ -1,11 +1,17 @@
 package com.anz.docker.business.controller;
 
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.anz.docker.bean.Environment;
 import com.anz.docker.bean.InfoBean;
 
 @RestController
@@ -21,15 +27,22 @@ public class BusinessController {
 		info.setService_name(envInfoapp);
 		info.setVersion(envInfover);
 		info.setGit_commit_sha(envInfosha);
+		  try (InputStream input = new FileInputStream("src/main/resources/application.properties")) {
+	            Properties prop = new Properties();
+	            Environment env = new Environment();
+	      
+	            prop.load(input);
+	            env.setLog_level(prop.getProperty("logging.level.root"));
+	            env.setService_port(prop.getProperty("server.port"));
+	           
+	        } catch (IOException ex) {
+	        	 logger.error("Exception while fetching env details",ex.getMessage());
+	        }
 		
-		 logger.info("doStuff took input - {}",envInfoapp);
-		 logger.info("doStuff took input - {}",envInfover);
-		 logger.info("doStuff took input - {}",envInfosha);
-		logger.trace("doStuff needed more information - {}","");
-		logger.debug("doStuff needed to debug - {}","");
-	    logger.info("doStuff took input - {}","");
-	    logger.warn("doStuff needed to warn - {}","");
-	    logger.error("doStuff encountered an error with value - {}","");
+		 logger.info("Value received from run env for APP",envInfoapp);
+		 logger.info("Value received from run env for VER",envInfover);
+		 logger.info("Value received from run env for GIT SHA",envInfosha);
+	
 		return info;
 	}
 }
