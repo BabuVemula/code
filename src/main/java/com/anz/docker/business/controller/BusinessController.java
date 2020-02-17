@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,7 +28,7 @@ public class BusinessController {
 		info.setService_name(envInfoapp);
 		info.setVersion(envInfover);
 		info.setGit_commit_sha(envInfosha);
-		try (InputStream input = new Properties().getClass().getResourceAsStream("/application.properties");) {
+		try (InputStream input = new ClassPathResource("classpath:application.properties").getInputStream();) {
 			Properties prop = new Properties();
 			Environment environment = new Environment();
 			prop.load(input);
