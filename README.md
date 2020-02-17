@@ -73,7 +73,7 @@ sudo docker run --name businessdemo
 	 -e app=babu
 	 -e ver=0.0.1
 	 -e sha=gitsha
-	 -v /tmp:/application
+	 -v /tmp:/application/
 	 -d -p 8080:8080 businessdemo
 
 ```
