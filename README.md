@@ -61,11 +61,7 @@ To create docker image
 sudo docker build -t businessdemo .
 ```
 
-Make sure the host machines `/tmp/log` directory has enough permission to write the logs back from docker `/application` directory.
-
-```sh
-sudo chmod 777 /tmp
-```
+Make sure the host machines `/tmp` directory has enough permission to write the logs back from docker `/application` directory.
 
 Run docker,
 ```sh
