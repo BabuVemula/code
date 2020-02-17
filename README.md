@@ -15,11 +15,12 @@ COPY /target/businessdemo.jar /businessdemo.jar
 CMD ["java", "-jar","-Dspring.profiles.active=default","/businessdemo.jar"]
 ```
 
-Requirements
+Requirements and Dependencies
 ======================
 - Maven
 - JAVA 8
 - Docker
+- Internet connection to Maven repo to down all required dependencies.
 
 Maven
 ===========================
