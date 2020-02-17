@@ -61,8 +61,11 @@ To create docker image
 sudo docker build -t businessdemo .
 ```
 
-Make sure the host machines `/tmp` directory has enough permission to write the logs back from docker `/application` directory.
+Make sure the host machines `/tmp` directory has enough permission to write the logs back from docker `/application` directory and run below command.
 
+```sh
+touch /tmp/log.log
+```
 Run docker,
 ```sh
 sudo docker run --name businessdemo -d -v /tmp:/application/ -p 8080:8080 -e app=my-app -e ver=0.0.1 -e sha=gitsha businessdemo
@@ -78,4 +81,12 @@ Key Features
 - Maven build tool is used
 - Configurable logging option
 
+No Maven and Java - Please follow
+====================================
+```sh
 
+cd Binaries
+sudo docker build -t businessdemo .
+sudo docker run --name businessdemo -d -v /tmp:/application/ -p 8080:8080 -e app=my-app -e ver=0.0.1 -e sha=gitsha businessdemo
+
+```
