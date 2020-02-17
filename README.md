@@ -69,12 +69,7 @@ sudo chmod 777 /tmp
 
 Run docker,
 ```sh
-sudo docker run --name businessdemo
-	 -e app=babu
-	 -e ver=0.0.1
-	 -e sha=gitsha
-	 -v /tmp:/application/
-	 -d -p 8080:8080 businessdemo
+sudo docker run --name businessdemo -d -v /tmp:/application/ -p 8080:8080 -e app=my-app -e ver=0.0.1 -e sha=gitsha businessdemo
 
 ```
 The environment varibles in docker run are set to reflect the values in `/info` api call with 200 response. The `environment` section is auto filled based on application.properties data.
