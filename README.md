@@ -5,7 +5,7 @@ Introduction
 ==========================
 This demo application is developed using Spring boot and it has an get API `/info`. This application is built with `maven` and all project dependencies are defined in `pom.xml`. Also, environment details are managed in `application.properties` under resources folder. Also `SSL` is enabled to have end to end encryption while hitting the `/info` API. Application logs are managed using spring boot `logback` configuration and writting to `/application` directory under `home` folder.
 
-Once application is built with maven, it created a `businessdemo.jar` under `target` directory. This jar file is deployed to docker using the `DockerFile`.
+Once application is built with maven, `businessdemo.jar` is created under `target` directory. This jar file is deployed to docker using the `DockerFile`.
 
 ```sh
 FROM java:8
@@ -45,6 +45,7 @@ Clone repository to:
 ```
 Run Maven clean to clean the maven directory
 ```sh
+cd code
  "mvn clean" 
  ```
 Then, run below command to build the application. This creates a directory `target` and `businessdemo.jar`.
@@ -57,14 +58,13 @@ Now, it is time to deploy the application in docker. Please run below commands
 
 To create docker image
 ```sh
-cd code
 sudo docker build -t businessdemo .
 ```
 
 Make sure the host machines `/tmp/log` directory has enough permission to write the logs back from docker `/application` directory.
 
 ```sh
-sudo Chmod -R 777 /tmp
+sudo chmod 777 /tmp
 ```
 
 Run docker,
@@ -73,7 +73,7 @@ sudo docker run --name businessdemo
 	 -e app=babu
 	 -e ver=0.0.1
 	 -e sha=gitsha
-	 -v /tmp/log:/application
+	 -v /tmp:/application
 	 -d -p 8080:8080 businessdemo
 
 ```
