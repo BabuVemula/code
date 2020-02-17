@@ -20,7 +20,7 @@ Requirements and Dependencies
 - Maven
 - JAVA 8
 - Docker
-- Internet connection to Maven repo to down all required dependencies.
+- Internet connection to Maven repo to download all required dependencies.
 
 Maven
 ===========================
@@ -41,11 +41,11 @@ Once Maven and java is installed clone the repository and run maven commands to 
 
 Clone repository to: 
 ```sh
-"git clone https://github.com/BabuVemula/code.git"
+"git clone https://github.com/anz-ecp/babu-vemula.git"
 ```
 Run Maven clean to clean the maven directory
 ```sh
-cd code
+cd babu-vemula
  "mvn clean" 
  ```
 Then, run below command to build the application. This creates a directory `target` and `businessdemo.jar`.
@@ -89,4 +89,13 @@ cd Binaries
 sudo docker build -t businessdemo .
 sudo docker run --name businessdemo -d -v /tmp:/application/ -p 8080:8080 -e app=my-app -e ver=0.0.1 -e sha=gitsha businessdemo
 
+```
+# verifying the output
+
+Once it is completed, please check "https://localhost:8080/info, since we are using self-signed certificate we need to accpect the security risk and proceed further.
+
+`Reponse shoud be as below:`
+
+```sh
+{"service_name":"my-app","version":"0.0.1","git_commit_sha":"gitsha","env":{"service_port":"8080","log_level":"info"}}
 ```

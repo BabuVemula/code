@@ -1,5 +1,6 @@
 package com.anz.docker.bean;
 
+//Bean class to generate info details as response
 public class InfoBean {
 
 	private String service_name;

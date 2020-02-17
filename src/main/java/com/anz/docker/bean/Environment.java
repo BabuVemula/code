@@ -1,5 +1,6 @@
 package com.anz.docker.bean;
 
+//Bean class to generate env details in Info bean
 public class Environment {
 	private String service_port;
 	private String log_level;
